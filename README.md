@@ -122,24 +122,6 @@ npm start                # Starts on http://localhost:3000
 
 ---
 
-## 🔄 Spring Boot → Node.js Conversion Map
-
-| Spring Component | Node.js Equivalent |
-|---|---|
-| `@Entity` (JPA) | Mongoose Schema |
-| `JpaRepository` | Mongoose Model methods |
-| `@RestController` | Express Router |
-| `@Service` / `@Component` | Inline route logic / helper functions |
-| `Spring Security` + `BCrypt` | JWT + `bcryptjs` |
-| `SecurityConfig` | `middleware/auth.js` |
-| `DataInitializer` (CommandLineRunner) | `config/seeder.js` |
-| `application.properties` | `.env` file |
-| Thymeleaf templates | React components |
-| `@Autowired` / DI | `require()` imports |
-| `@PreAuthorize("hasRole('ADMIN')")` | `adminOnly` middleware |
-
----
-
 ## 💳 Payment Notes
 
 The payment flow uses **Razorpay**:
